@@ -1,0 +1,384 @@
+2026.01.30 19:29:10 INFO  Started: Metals version 1.6.5 in folders 'C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS' for client Visual Studio Code 1.108.2.
+2026.01.30 19:29:10 INFO  Memory monitor started
+2026.01.30 19:29:10 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.01.30 19:29:15 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\SaaSApplication.java
+2026.01.30 19:29:25 INFO  skipping build import with status 'Dismissed'
+2026.01.30 19:29:37 INFO  skipping build import with status 'Dismissed'
+2026.01.30 19:29:49 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\EstadoSuscripcion.java
+2026.01.30 19:29:49 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/model/enums/EstadoSuscripcion.java. Output:
+
+2026.01.30 19:29:49 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\EstadoSuscripcion.java. Using fallback presentation compiler.
+2026.01.30 19:29:49 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoPlan.java
+2026.01.30 19:29:49 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/model/enums/TipoPlan.java. Output:
+
+2026.01.30 19:29:49 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoPlan.java. Using fallback presentation compiler.
+2026.01.30 19:29:49 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\EstadoSuscripcion.java. Using fallback presentation compiler.
+2026.01.30 19:29:49 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoMetodoPago.java
+2026.01.30 19:29:49 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/model/enums/TipoMetodoPago.java. Output:
+
+2026.01.30 19:29:49 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoMetodoPago.java. Using fallback presentation compiler.
+2026.01.30 19:29:49 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoPlan.java. Using fallback presentation compiler.
+2026.01.30 19:29:49 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\EstadoSuscripcion.java. Using fallback presentation compiler.
+2026.01.30 19:29:49 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\EstadoFactura.java
+2026.01.30 19:29:49 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/model/enums/EstadoFactura.java. Output:
+
+2026.01.30 19:29:49 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\EstadoFactura.java. Using fallback presentation compiler.
+2026.01.30 19:29:49 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoMetodoPago.java. Using fallback presentation compiler.
+2026.01.30 19:29:49 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoPlan.java. Using fallback presentation compiler.
+2026.01.30 19:29:49 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\EstadoSuscripcion.java. Using fallback presentation compiler.
+2026.01.30 19:29:49 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoFactura.java
+2026.01.30 19:29:49 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/model/enums/TipoFactura.java. Output:
+
+2026.01.30 19:29:50 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoFactura.java. Using fallback presentation compiler.
+2026.01.30 19:29:50 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\EstadoFactura.java. Using fallback presentation compiler.
+2026.01.30 19:29:50 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoMetodoPago.java. Using fallback presentation compiler.
+2026.01.30 19:29:50 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoPlan.java. Using fallback presentation compiler.
+2026.01.30 19:29:50 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\EstadoSuscripcion.java. Using fallback presentation compiler.
+2026.01.30 19:29:50 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoMetodoPago.java
+2026.01.30 19:29:50 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\EstadoSuscripcion.java
+2026.01.30 19:29:50 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\EstadoFactura.java
+2026.01.30 19:29:50 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoFactura.java
+2026.01.30 19:29:50 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoPlan.java
+2026.01.30 19:29:53 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\EstadoSuscripcion.java
+2026.01.30 19:29:53 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoFactura.java
+2026.01.30 19:29:53 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\EstadoFactura.java
+2026.01.30 19:29:53 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoMetodoPago.java
+2026.01.30 19:29:53 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoPlan.java
+2026.01.30 19:30:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java
+2026.01.30 19:30:29 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/model/Usuario.java. Output:
+
+2026.01.30 19:30:29 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java. Using fallback presentation compiler.
+2026.01.30 19:30:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Perfil.java
+2026.01.30 19:30:29 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Perfil.java. Using fallback presentation compiler.
+2026.01.30 19:30:29 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/model/Perfil.java. Output:
+
+2026.01.30 19:30:29 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java. Using fallback presentation compiler.
+2026.01.30 19:30:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Plan.java
+2026.01.30 19:30:29 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/model/Plan.java. Output:
+
+2026.01.30 19:30:30 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Plan.java. Using fallback presentation compiler.
+2026.01.30 19:30:30 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java. Using fallback presentation compiler.
+2026.01.30 19:30:30 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Perfil.java. Using fallback presentation compiler.
+2026.01.30 19:30:30 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java
+2026.01.30 19:30:30 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Perfil.java. Using fallback presentation compiler.
+2026.01.30 19:30:30 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Plan.java. Using fallback presentation compiler.
+2026.01.30 19:30:30 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Perfil.java
+2026.01.30 19:30:30 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Plan.java. Using fallback presentation compiler.
+2026.01.30 19:30:30 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Plan.java
+2026.01.30 19:30:31 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Perfil.java
+2026.01.30 19:30:31 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java
+2026.01.30 19:30:31 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Plan.java
+2026.01.30 19:31:16 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Suscripcion.java
+2026.01.30 19:31:16 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Suscripcion.java. Using fallback presentation compiler.
+2026.01.30 19:31:16 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Factura.java
+2026.01.30 19:31:16 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/model/Suscripcion.java. Output:
+
+2026.01.30 19:31:16 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/model/Factura.java. Output:
+
+2026.01.30 19:31:17 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Factura.java. Using fallback presentation compiler.
+2026.01.30 19:31:17 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Suscripcion.java. Using fallback presentation compiler.
+2026.01.30 19:31:17 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Suscripcion.java
+2026.01.30 19:31:17 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Factura.java. Using fallback presentation compiler.
+2026.01.30 19:31:17 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Factura.java
+2026.01.30 19:31:27 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Suscripcion.java
+2026.01.30 19:31:27 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Factura.java
+2026.01.30 19:31:57 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\MetodoPago.java
+2026.01.30 19:31:57 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/model/MetodoPago.java. Output:
+
+2026.01.30 19:31:57 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\MetodoPago.java. Using fallback presentation compiler.
+2026.01.30 19:31:57 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTarjeta.java
+2026.01.30 19:31:57 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/model/PagoTarjeta.java. Output:
+
+2026.01.30 19:31:57 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTarjeta.java. Using fallback presentation compiler.
+2026.01.30 19:31:57 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\MetodoPago.java. Using fallback presentation compiler.
+2026.01.30 19:31:57 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoPayPal.java
+2026.01.30 19:31:57 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoPayPal.java. Using fallback presentation compiler.
+2026.01.30 19:31:57 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTarjeta.java. Using fallback presentation compiler.
+2026.01.30 19:31:57 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\MetodoPago.java. Using fallback presentation compiler.
+2026.01.30 19:31:57 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/model/PagoPayPal.java. Output:
+
+2026.01.30 19:31:57 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTransferencia.java
+2026.01.30 19:31:57 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/model/PagoTransferencia.java. Output:
+
+2026.01.30 19:31:59 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTransferencia.java. Using fallback presentation compiler.
+2026.01.30 19:31:59 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\MetodoPago.java. Using fallback presentation compiler.
+2026.01.30 19:31:59 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoPayPal.java. Using fallback presentation compiler.
+2026.01.30 19:31:59 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTarjeta.java. Using fallback presentation compiler.
+2026.01.30 19:31:59 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\MetodoPago.java
+2026.01.30 19:31:59 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTransferencia.java. Using fallback presentation compiler.
+2026.01.30 19:31:59 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoPayPal.java. Using fallback presentation compiler.
+2026.01.30 19:31:59 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTarjeta.java. Using fallback presentation compiler.
+2026.01.30 19:31:59 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTarjeta.java
+2026.01.30 19:31:59 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTransferencia.java. Using fallback presentation compiler.
+2026.01.30 19:31:59 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoPayPal.java. Using fallback presentation compiler.
+2026.01.30 19:31:59 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoPayPal.java
+2026.01.30 19:31:59 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTransferencia.java. Using fallback presentation compiler.
+2026.01.30 19:31:59 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTransferencia.java
+2026.01.30 19:32:02 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\MetodoPago.java
+2026.01.30 19:32:02 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTransferencia.java
+2026.01.30 19:32:02 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoPayPal.java
+2026.01.30 19:32:02 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTarjeta.java
+2026.01.30 19:32:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\SaaSApplication.java. Using fallback presentation compiler.
+2026.01.30 19:32:26 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionListener.java
+2026.01.30 19:32:26 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/config/CustomRevisionListener.java. Output:
+
+2026.01.30 19:32:26 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionListener.java. Using fallback presentation compiler.
+2026.01.30 19:32:26 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionEntity.java
+2026.01.30 19:32:26 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/config/CustomRevisionEntity.java. Output:
+
+2026.01.30 19:32:26 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionEntity.java. Using fallback presentation compiler.
+2026.01.30 19:32:26 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionListener.java. Using fallback presentation compiler.
+2026.01.30 19:32:26 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\JpaConfig.java
+2026.01.30 19:32:26 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/config/JpaConfig.java. Output:
+
+2026.01.30 19:32:26 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\JpaConfig.java. Using fallback presentation compiler.
+2026.01.30 19:32:26 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionEntity.java. Using fallback presentation compiler.
+2026.01.30 19:32:26 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionListener.java. Using fallback presentation compiler.
+2026.01.30 19:32:27 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\JpaConfig.java
+2026.01.30 19:32:26 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionListener.java. Using fallback presentation compiler.
+2026.01.30 19:32:26 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionEntity.java. Using fallback presentation compiler.
+2026.01.30 19:32:27 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionListener.java
+2026.01.30 19:32:27 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionEntity.java. Using fallback presentation compiler.
+2026.01.30 19:32:27 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionEntity.java
+2026.01.30 19:32:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionListener.java
+2026.01.30 19:32:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionEntity.java
+2026.01.30 19:32:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\JpaConfig.java
+2026.01.30 19:33:04 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\UsuarioRepository.java
+2026.01.30 19:33:04 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/repository/UsuarioRepository.java. Output:
+
+2026.01.30 19:33:04 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\PlanRepository.java
+2026.01.30 19:33:04 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/repository/PlanRepository.java. Output:
+
+2026.01.30 19:33:04 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\PlanRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\SuscripcionRepository.java
+2026.01.30 19:33:04 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/repository/SuscripcionRepository.java. Output:
+
+2026.01.30 19:33:04 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\SuscripcionRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\PlanRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java
+2026.01.30 19:33:04 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/repository/FacturaRepository.java. Output:
+
+2026.01.30 19:33:04 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\PlanRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\SuscripcionRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\PerfilRepository.java
+2026.01.30 19:33:04 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\PerfilRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/repository/PerfilRepository.java. Output:
+
+2026.01.30 19:33:04 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\PlanRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\SuscripcionRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\MetodoPagoRepository.java
+2026.01.30 19:33:05 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/repository/MetodoPagoRepository.java. Output:
+
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\MetodoPagoRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\PerfilRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\PlanRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\SuscripcionRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:05 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\PlanRepository.java
+2026.01.30 19:33:05 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\PerfilRepository.java
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\UsuarioRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\SuscripcionRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\MetodoPagoRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:04 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\UsuarioRepository.java
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\SuscripcionRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\MetodoPagoRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:06 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\MetodoPagoRepository.java
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\SuscripcionRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:06 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\SuscripcionRepository.java
+2026.01.30 19:33:05 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java. Using fallback presentation compiler.
+2026.01.30 19:33:06 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java
+2026.01.30 19:33:20 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\DataLoader.java
+2026.01.30 19:33:20 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/config/DataLoader.java. Output:
+
+2026.01.30 19:33:22 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\DataLoader.java. Using fallback presentation compiler.
+2026.01.30 19:33:22 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\DataLoader.java
+2026.01.30 19:33:50 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\PlanRepository.java
+2026.01.30 19:33:50 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\SuscripcionRepository.java
+2026.01.30 19:33:50 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\UsuarioRepository.java
+2026.01.30 19:33:50 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java
+2026.01.30 19:33:50 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\MetodoPagoRepository.java
+2026.01.30 19:33:50 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\PerfilRepository.java
+2026.01.30 19:33:50 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\DataLoader.java
+2026.01.30 19:34:09 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java. Using fallback presentation compiler.
+2026.01.30 19:34:09 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java
+2026.01.30 19:34:18 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java
+2026.01.30 19:36:18 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java. Using fallback presentation compiler.
+2026.01.30 19:36:21 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java. Using fallback presentation compiler.
+2026.01.30 19:45:42 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.01.30 19:45:42 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/service/SuscripcionService.java. Output:
+
+2026.01.30 19:45:42 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.01.30 19:45:42 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\UsuarioService.java
+2026.01.30 19:45:42 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/service/UsuarioService.java. Output:
+
+2026.01.30 19:45:42 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\UsuarioService.java. Using fallback presentation compiler.
+2026.01.30 19:45:42 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.01.30 19:45:42 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\PlanService.java
+2026.01.30 19:45:42 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/service/PlanService.java. Output:
+
+2026.01.30 19:45:42 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\PlanService.java. Using fallback presentation compiler.
+2026.01.30 19:45:43 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\UsuarioService.java. Using fallback presentation compiler.
+2026.01.30 19:45:43 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.01.30 19:45:43 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\PlanService.java
+2026.01.30 19:45:43 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.01.30 19:45:43 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\UsuarioService.java. Using fallback presentation compiler.
+2026.01.30 19:45:44 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.01.30 19:45:44 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\UsuarioService.java
+2026.01.30 19:45:47 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\UsuarioService.java
+2026.01.30 19:45:47 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.01.30 19:45:47 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\PlanService.java
+2026.01.30 19:46:01 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\PlanDTO.java
+2026.01.30 19:46:01 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/dto/PlanDTO.java. Output:
+
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\PlanDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\UsuarioDTO.java
+2026.01.30 19:46:01 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/dto/UsuarioDTO.java. Output:
+
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\PlanDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\SuscripcionDTO.java
+2026.01.30 19:46:01 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/dto/SuscripcionDTO.java. Output:
+
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\SuscripcionDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\PlanDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\FacturaDTO.java
+2026.01.30 19:46:01 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/dto/FacturaDTO.java. Output:
+
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\FacturaDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\SuscripcionDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\PlanDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\RegistroRequest.java
+2026.01.30 19:46:01 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/dto/RegistroRequest.java. Output:
+
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\RegistroRequest.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\SuscripcionDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\PlanDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\FacturaDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\CambiarPlanRequest.java
+2026.01.30 19:46:01 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/dto/CambiarPlanRequest.java. Output:
+
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\CambiarPlanRequest.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\RegistroRequest.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\SuscripcionDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\UsuarioDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\PlanDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\FacturaDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:02 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\UsuarioDTO.java
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\CambiarPlanRequest.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\RegistroRequest.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\SuscripcionDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\FacturaDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:02 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\PlanDTO.java
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\CambiarPlanRequest.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\RegistroRequest.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\SuscripcionDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:01 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\FacturaDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:02 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\CambiarPlanRequest.java
+2026.01.30 19:46:02 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\RegistroRequest.java. Using fallback presentation compiler.
+2026.01.30 19:46:02 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\SuscripcionDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:02 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\FacturaDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:02 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\SuscripcionDTO.java
+2026.01.30 19:46:02 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\RegistroRequest.java. Using fallback presentation compiler.
+2026.01.30 19:46:02 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\FacturaDTO.java. Using fallback presentation compiler.
+2026.01.30 19:46:02 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\RegistroRequest.java
+2026.01.30 19:46:02 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\FacturaDTO.java
+2026.01.30 19:46:04 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\PlanDTO.java
+2026.01.30 19:46:04 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\SuscripcionDTO.java
+2026.01.30 19:46:04 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\UsuarioDTO.java
+2026.01.30 19:46:04 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\FacturaDTO.java
+2026.01.30 19:46:04 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\RegistroRequest.java
+2026.01.30 19:46:04 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\CambiarPlanRequest.java
+2026.01.30 19:46:38 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\mapper\EntityMapper.java
+2026.01.30 19:46:38 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/mapper/EntityMapper.java. Output:
+
+2026.01.30 19:46:39 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\mapper\EntityMapper.java. Using fallback presentation compiler.
+2026.01.30 19:46:39 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\PlanController.java
+2026.01.30 19:46:39 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/controller/PlanController.java. Output:
+
+2026.01.30 19:46:39 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\PlanController.java. Using fallback presentation compiler.
+2026.01.30 19:46:39 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\mapper\EntityMapper.java. Using fallback presentation compiler.
+2026.01.30 19:46:39 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\UsuarioController.java
+2026.01.30 19:46:39 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/controller/UsuarioController.java. Output:
+
+2026.01.30 19:46:39 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.01.30 19:46:39 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\mapper\EntityMapper.java. Using fallback presentation compiler.
+2026.01.30 19:46:39 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\PlanController.java. Using fallback presentation compiler.
+2026.01.30 19:46:39 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\SuscripcionController.java
+2026.01.30 19:46:39 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/Juan-DAM/2º/Java/SaaS/SaaS/src/main/java/com/Martin/SaaS/controller/SuscripcionController.java. Output:
+
+2026.01.30 19:46:40 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\SuscripcionController.java. Using fallback presentation compiler.
+2026.01.30 19:46:40 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\mapper\EntityMapper.java. Using fallback presentation compiler.
+2026.01.30 19:46:40 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\PlanController.java. Using fallback presentation compiler.
+2026.01.30 19:46:40 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.01.30 19:46:40 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\PlanController.java
+2026.01.30 19:46:40 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\SuscripcionController.java. Using fallback presentation compiler.
+2026.01.30 19:46:40 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\mapper\EntityMapper.java. Using fallback presentation compiler.
+2026.01.30 19:46:40 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.01.30 19:46:40 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\mapper\EntityMapper.java
+2026.01.30 19:46:40 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\UsuarioController.java. Using fallback presentation compiler.
+2026.01.30 19:46:40 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\SuscripcionController.java. Using fallback presentation compiler.
+2026.01.30 19:46:40 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\UsuarioController.java
+2026.01.30 19:46:40 INFO  no build target found for C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\SuscripcionController.java. Using fallback presentation compiler.
+2026.01.30 19:46:40 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\SuscripcionController.java
+2026.01.30 19:47:58 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\PlanController.java
+2026.01.30 19:47:59 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\mapper\EntityMapper.java
+2026.01.30 19:47:59 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\UsuarioController.java
+2026.01.30 19:47:59 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\SuscripcionController.java
+2026.01.30 20:49:38 INFO  Shutting down server
+2026.01.30 20:49:38 INFO  Memory monitor stopped
+2026.01.30 20:49:38 INFO  shutting down Metals
+2026.01.30 20:49:38 INFO  Exiting server
+2026.02.01 03:15:25 INFO  Started: Metals version 1.6.5 in folders 'C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS' for client Visual Studio Code 1.108.2.
+2026.02.01 03:15:25 INFO  Memory monitor started
+2026.02.01 03:15:26 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionListener.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoPayPal.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\EstadoSuscripcion.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Factura.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoFactura.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Perfil.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Suscripcion.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\PerfilRepository.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\DataLoader.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTarjeta.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\UsuarioController.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\PlanController.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\RegistroRequest.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\JpaConfig.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\SuscripcionDTO.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\MetodoPago.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\EstadoFactura.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\PlanDTO.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\PagoTransferencia.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoMetodoPago.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\SuscripcionRepository.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\PlanService.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\PlanRepository.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\SuscripcionController.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\config\CustomRevisionEntity.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\UsuarioRepository.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\CambiarPlanRequest.java
+2026.02.01 03:15:29 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.01 03:15:30 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\mapper\EntityMapper.java
+2026.02.01 03:15:30 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\MetodoPagoRepository.java
+2026.02.01 03:15:30 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\UsuarioDTO.java
+2026.02.01 03:15:30 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java
+2026.02.01 03:15:30 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\enums\TipoPlan.java
+2026.02.01 03:15:30 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\dto\FacturaDTO.java
+2026.02.01 03:15:30 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\UsuarioService.java
+2026.02.01 03:15:30 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java
+2026.02.01 03:15:30 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Plan.java
