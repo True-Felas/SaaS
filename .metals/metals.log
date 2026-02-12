@@ -606,3 +606,32 @@ INFO: Unsupported notification method: $/setTrace
 2026.02.11 23:21:57 INFO  Memory monitor stopped
 2026.02.11 23:21:57 INFO  shutting down Metals
 2026.02.11 23:21:57 INFO  Exiting server
+2026.02.12 18:25:14 INFO  Started: Metals version 1.6.5 in folders 'C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS' for client Visual Studio Code 1.109.2.
+2026.02.12 18:25:14 INFO  Memory monitor started
+2026.02.12 18:25:15 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.12 18:25:15 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+feb 12, 2026 6:25:17 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2026.02.12 18:25:17 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.12 18:25:17 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.12 18:25:17 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.12 18:25:17 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+feb 12, 2026 6:25:18 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+feb 12, 2026 6:25:18 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+feb 12, 2026 6:25:18 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+feb 12, 2026 6:25:19 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+feb 12, 2026 6:25:19 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+2026.02.12 18:25:19 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+feb 12, 2026 6:25:19 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12
+2026.02.12 18:25:19 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.12 18:25:19 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.12 18:25:21 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.12 18:25:21 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.12 18:25:22 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.12 18:25:29 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
