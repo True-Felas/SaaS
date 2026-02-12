@@ -17,6 +17,17 @@ import java.util.Optional;
  */
 @Repository
 public interface FacturaRepository extends JpaRepository<Factura, Long> {
+    /**
+     * Filtra facturas por rango de fechas de emisión.
+     */
+    @Query("SELECT f FROM Factura f WHERE f.fechaEmision BETWEEN :fechaInicio AND :fechaFin")
+    List<Factura> findByFechaEmisionBetween(@Param("fechaInicio") LocalDate fechaInicio, @Param("fechaFin") LocalDate fechaFin);
+
+    /**
+     * Filtra facturas por monto mínimo y máximo.
+     */
+    @Query("SELECT f FROM Factura f WHERE f.total BETWEEN :minMonto AND :maxMonto")
+    List<Factura> findByTotalBetween(@Param("minMonto") java.math.BigDecimal minMonto, @Param("maxMonto") java.math.BigDecimal maxMonto);
 
     /**
      * Busca una factura por número.
@@ -69,8 +80,4 @@ public interface FacturaRepository extends JpaRepository<Factura, Long> {
     @Query("SELECT f FROM Factura f WHERE f.suscripcion.usuario.id = :usuarioId AND f.tipo = 'PRORRATEO'")
     List<Factura> findFacturasProrrateoByUsuarioId(@Param("usuarioId") Long usuarioId);
 
-    /**
-     * Busca facturas en un rango de fechas.
-     */
-    List<Factura> findByFechaEmisionBetween(LocalDate fechaInicio, LocalDate fechaFin);
 }

@@ -1,3 +1,14 @@
+error id: file:///C:/Users/juanx/Desktop/SpringBoot/SaaS/SaaS/src/main/java/com/Martin/SaaS/service/SuscripcionService.java:com/Martin/SaaS/service/SuscripcionService#obtenerPorcentajeImpuestoPorPais#
+file:///C:/Users/juanx/Desktop/SpringBoot/SaaS/SaaS/src/main/java/com/Martin/SaaS/service/SuscripcionService.java
+empty definition using pc, found symbol in pc: com/Martin/SaaS/service/SuscripcionService#obtenerPorcentajeImpuestoPorPais#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 3859
+uri: file:///C:/Users/juanx/Desktop/SpringBoot/SaaS/SaaS/src/main/java/com/Martin/SaaS/service/SuscripcionService.java
+text:
+```scala
 package com.Martin.SaaS.service;
 
 import com.Martin.SaaS.model.*;
@@ -99,7 +110,7 @@ public class SuscripcionService {
         Usuario usuario = suscripcion.getUsuario();
         String pais = usuario.getPerfil() != null ? usuario.getPerfil().getPais() : "ES";
 
-        BigDecimal porcentajeImpuesto = obtenerPorcentajeImpuestoPorPais(pais);
+        BigDecimal porcentajeImpuesto = @@obtenerPorcentajeImpuestoPorPais(pais);
 
         Factura factura = Factura.builder()
             .suscripcion(suscripcion)
@@ -119,22 +130,22 @@ public class SuscripcionService {
 
         log.info("Factura mensual generada: {} - {}€", factura.getNumeroFactura(), factura.getTotal());
         return factura;
-    }
-
-    private BigDecimal obtenerPorcentajeImpuestoPorPais(String pais) {
-        switch (pais != null ? pais.toUpperCase() : "ES") {
-            case "ES": // España
-                return new BigDecimal("21.00");
-            case "MX": // México
-                return new BigDecimal("16.00");
-            case "AR": // Argentina
-                return new BigDecimal("21.00");
-            case "US": // USA
-                return new BigDecimal("8.00");
-            case "CO": // Colombia
-                return new BigDecimal("19.00");
-            default:
-                return new BigDecimal("21.00"); // Default (España)
+        
+        BigDecimal obtenerPorcentajeImpuestoPorPais(String pais) {
+            switch (pais != null ? pais.toUpperCase() : "ES") {
+                case "ES": // España
+                    return new BigDecimal("21.00");
+                case "MX": // México
+                    return new BigDecimal("16.00");
+                case "AR": // Argentina
+                    return new BigDecimal("21.00");
+                case "US": // USA
+                    return new BigDecimal("8.00");
+                case "CO": // Colombia
+                    return new BigDecimal("19.00");
+                default:
+                    return new BigDecimal("21.00"); // Default (España)
+            }
         }
     }
 
@@ -237,3 +248,10 @@ public class SuscripcionService {
         return facturaRepository.save(factura);
     }
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: com/Martin/SaaS/service/SuscripcionService#obtenerPorcentajeImpuestoPorPais#

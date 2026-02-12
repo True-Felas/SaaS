@@ -382,3 +382,227 @@
 2026.02.01 03:15:30 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\UsuarioService.java
 2026.02.01 03:15:30 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java
 2026.02.01 03:15:30 WARN  no build target for: C:\Users\juanx\Desktop\Juan-DAM\2º\Java\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Plan.java
+2026.02.11 15:46:44 INFO  Started: Metals version 1.6.5 in folders 'C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS' for client Visual Studio Code 1.109.2.
+2026.02.11 15:46:44 INFO  Memory monitor started
+2026.02.11 15:46:49 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.11 15:47:12 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 15:47:13 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 15:47:13 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/SpringBoot/SaaS/SaaS/src/main/java/com/Martin/SaaS/service/SuscripcionService.java. Output:
+
+2026.02.11 15:47:53 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 15:47:57 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java. Using fallback presentation compiler.
+2026.02.11 15:47:57 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java
+2026.02.11 15:48:03 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java
+2026.02.11 15:48:22 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 15:48:22 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 15:48:23 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+feb 11, 2026 3:48:23 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2026.02.11 15:48:22 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 15:48:22 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+feb 11, 2026 3:48:23 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+2026.02.11 15:48:23 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 15:48:27 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 15:48:27 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 15:48:27 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 15:48:27 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 15:49:51 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java. Using fallback presentation compiler.
+2026.02.11 15:49:58 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Perfil.java. Using fallback presentation compiler.
+2026.02.11 15:50:02 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Factura.java. Using fallback presentation compiler.
+2026.02.11 15:50:20 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Suscripcion.java. Using fallback presentation compiler.
+2026.02.11 17:41:11 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:41:13 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:41:13 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:41:13 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+feb 11, 2026 5:41:14 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 20
+2026.02.11 17:42:03 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:42:03 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 17:42:03 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:42:03 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:42:03 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/SpringBoot/SaaS/SaaS/src/main/java/com/Martin/SaaS/service/SuscripcionService.java. Output:
+
+2026.02.11 17:42:03 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:42:04 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:42:05 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 17:42:05 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:42:06 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:42:10 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java. Using fallback presentation compiler.
+2026.02.11 17:42:10 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java
+2026.02.11 17:42:10 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:42:12 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java
+2026.02.11 17:42:12 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:42:35 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:42:35 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 17:42:35 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:42:35 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 17:42:35 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:42:36 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:42:36 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:42:41 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:32 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:32 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 17:43:32 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:32 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 17:43:32 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:32 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:33 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:42 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:42 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 17:43:42 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:42 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/SpringBoot/SaaS/SaaS/src/main/java/com/Martin/SaaS/service/SuscripcionService.java. Output:
+
+2026.02.11 17:43:42 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:43 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:46 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 17:43:46 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:48 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:53 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:53 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:53 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:55 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:55 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:56 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:55 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:56 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:57 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 17:43:57 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:57 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/SpringBoot/SaaS/SaaS/src/main/java/com/Martin/SaaS/service/SuscripcionService.java. Output:
+
+2026.02.11 17:43:58 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:43:58 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:04 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:04 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:08 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:08 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:08 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:09 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:08 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:09 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 17:44:09 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:09 WARN  Running javac-semanticdb failed for file:///C:/Users/juanx/Desktop/SpringBoot/SaaS/SaaS/src/main/java/com/Martin/SaaS/service/SuscripcionService.java. Output:
+
+2026.02.11 17:44:10 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:10 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:10 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:10 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:12 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:12 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 17:44:12 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:12 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 17:44:12 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:12 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:13 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:16 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:16 INFO  Created report: Optional[file:///C:/Users/juanx/Desktop/SpringBoot/SaaS/SaaS/src/main/java/com/Martin/SaaS/service/SuscripcionService.java]
+2026.02.11 17:44:16 INFO  empty definition using pc, found symbol in pc: com/Martin/SaaS/service/SuscripcionService#obtenerPorcentajeImpuestoPorPais# (full report at: "C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\.metals\.reports\metals-full\2026-02-11\r_empty-definition_17-44-16-640.md")
+2026.02.11 17:44:21 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:29 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:29 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 17:44:29 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:29 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:29 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:32 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 17:44:32 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:32 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:33 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:44:42 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 17:45:03 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:19:03 INFO  Started: Metals version 1.6.5 in folders 'C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS' for client Visual Studio Code 1.109.2.
+2026.02.11 21:19:03 INFO  Memory monitor started
+2026.02.11 21:19:09 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.11 21:19:09 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+feb 11, 2026 9:19:10 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2026.02.11 21:19:10 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:19:10 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:19:10 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:27:17 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java
+2026.02.11 21:27:17 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:27:20 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java
+2026.02.11 21:27:20 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:27:21 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+feb 11, 2026 9:27:21 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+2026.02.11 21:27:21 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:27:21 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:27:21 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:27:21 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:27:22 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:27:22 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+feb 11, 2026 9:27:22 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 20
+2026.02.11 21:27:22 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:27:22 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:27:22 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:27:22 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:27:22 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+feb 11, 2026 9:27:22 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+feb 11, 2026 9:27:22 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16
+feb 11, 2026 9:27:22 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 17
+feb 11, 2026 9:27:22 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18
+feb 11, 2026 9:27:22 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 19
+feb 11, 2026 9:27:22 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 22
+feb 11, 2026 9:27:22 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 23
+feb 11, 2026 9:27:22 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 24
+feb 11, 2026 9:27:22 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 25
+feb 11, 2026 9:27:22 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 26
+2026.02.11 21:27:22 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:27:22 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:27:30 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:28:39 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java. Using fallback presentation compiler.
+2026.02.11 21:28:39 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Factura.java
+2026.02.11 21:28:40 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Factura.java. Using fallback presentation compiler.
+2026.02.11 21:28:39 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Factura.java. Using fallback presentation compiler.
+2026.02.11 21:28:39 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:28:40 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Factura.java. Using fallback presentation compiler.
+2026.02.11 21:28:40 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\repository\FacturaRepository.java. Using fallback presentation compiler.
+2026.02.11 21:28:40 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Perfil.java
+2026.02.11 21:28:40 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Perfil.java. Using fallback presentation compiler.
+2026.02.11 21:28:40 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:28:40 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:28:40 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Perfil.java. Using fallback presentation compiler.
+2026.02.11 21:28:40 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Suscripcion.java
+2026.02.11 21:28:41 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Suscripcion.java. Using fallback presentation compiler.
+2026.02.11 21:28:40 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Perfil.java
+2026.02.11 21:28:41 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Perfil.java. Using fallback presentation compiler.
+2026.02.11 21:28:41 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:28:41 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Suscripcion.java. Using fallback presentation compiler.
+2026.02.11 21:28:41 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java
+2026.02.11 21:28:41 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java. Using fallback presentation compiler.
+2026.02.11 21:28:42 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:28:41 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Perfil.java. Using fallback presentation compiler.
+2026.02.11 21:28:41 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Suscripcion.java
+2026.02.11 21:28:42 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Suscripcion.java. Using fallback presentation compiler.
+2026.02.11 21:28:42 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:28:41 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java. Using fallback presentation compiler.
+2026.02.11 21:28:41 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Suscripcion.java. Using fallback presentation compiler.
+2026.02.11 21:28:42 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java
+2026.02.11 21:28:42 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java. Using fallback presentation compiler.
+2026.02.11 21:28:42 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:28:42 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\model\Usuario.java. Using fallback presentation compiler.
+feb 11, 2026 9:28:47 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+feb 11, 2026 9:28:50 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2026.02.11 21:28:52 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:40:51 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 21:42:12 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 23:19:06 WARN  no build target for: C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\controller\UsuarioController.java
+2026.02.11 23:19:06 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 23:21:38 INFO  no build target found for C:\Users\juanx\Desktop\SpringBoot\SaaS\SaaS\src\main\java\com\Martin\SaaS\service\SuscripcionService.java. Using fallback presentation compiler.
+2026.02.11 23:21:57 INFO  Shutting down server
+2026.02.11 23:21:57 INFO  Memory monitor stopped
+2026.02.11 23:21:57 INFO  shutting down Metals
+2026.02.11 23:21:57 INFO  Exiting server
