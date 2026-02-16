@@ -11,229 +11,237 @@ import org.springframework.transaction.annotation.Transactional;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
-/**
- * Servicio para gestión de suscripciones y facturación.
- */
+// Servicio para gestión de suscripciones y facturación.
 @Service
 @RequiredArgsConstructor
 @Slf4j
 @Transactional
 public class SuscripcionService {
 
-    private final SuscripcionRepository suscripcionRepository;
-    private final FacturaRepository facturaRepository;
-    private final PlanRepository planRepository;
-    private final UsuarioRepository usuarioRepository;
+	private final SuscripcionRepository suscripcionRepository;
+	private final FacturaRepository facturaRepository;
+	private final PlanRepository planRepository;
+	private final UsuarioRepository usuarioRepository;
 
-    /**
-     * Crea una nueva suscripción para un usuario.
-     */
-    public Suscripcion crearSuscripcion(Long usuarioId, Long planId) {
-        Usuario usuario = usuarioRepository.findById(usuarioId)
-                .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
-        
-        Plan plan = planRepository.findById(planId)
-                .orElseThrow(() -> new RuntimeException("Plan no encontrado"));
+	// Crea una nueva suscripción para un usuario.
+	public Suscripcion crearSuscripcion(Long usuarioId, Long planId) {
+		Usuario usuario = usuarioRepository.findById(usuarioId)
+				.orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
 
-        // Verificar si ya tiene una suscripción activa
-        Optional<Suscripcion> suscripcionActiva = suscripcionRepository.findSuscripcionActivaByUsuarioId(usuarioId);
-        if (suscripcionActiva.isPresent()) {
-            throw new RuntimeException("El usuario ya tiene una suscripción activa");
-        }
+		Plan plan = planRepository.findById(planId).orElseThrow(() -> new RuntimeException("Plan no encontrado"));
 
-        Suscripcion suscripcion = Suscripcion.builder()
-                .usuario(usuario)
-                .plan(plan)
-                .estado(EstadoSuscripcion.ACTIVA)
-                .fechaInicio(LocalDate.now())
-                .fechaProximoCobro(LocalDate.now().plusDays(30))
-                .autoRenovacion(true)
-                .periodoFacturacionDias(30)
-                .build();
+		// Verificar si ya tiene una suscripción activa
+		Optional<Suscripcion> suscripcionActiva = suscripcionRepository.findSuscripcionActivaByUsuarioId(usuarioId);
+		if (suscripcionActiva.isPresent()) {
+			throw new RuntimeException("El usuario ya tiene una suscripción activa");
+		}
 
-        suscripcion = suscripcionRepository.save(suscripcion);
+		Suscripcion suscripcion = Suscripcion.builder().usuario(usuario).plan(plan).estado(EstadoSuscripcion.ACTIVA)
+				.fechaInicio(LocalDate.now()).fechaProximoCobro(LocalDate.now().plusDays(30)).autoRenovacion(true)
+				.periodoFacturacionDias(30).build();
 
-        // Generar primera factura
-        generarFacturaMensual(suscripcion);
+		suscripcion = suscripcionRepository.save(suscripcion);
 
-        log.info("Suscripción creada: Usuario {} - Plan {}", usuario.getEmail(), plan.getNombre());
-        return suscripcion;
-    }
+		// Generar primera factura
+		generarFacturaMensual(suscripcion);
 
-    /**
-     * Cambia el plan de una suscripción existente.
-     * Si es un upgrade, genera factura de prorrateo.
-     */
-    public Suscripcion cambiarPlan(Long suscripcionId, Long nuevoPlanId) {
-        Suscripcion suscripcion = suscripcionRepository.findById(suscripcionId)
-                .orElseThrow(() -> new RuntimeException("Suscripción no encontrada"));
+		log.info("Suscripción creada: Usuario {} - Plan {}", usuario.getEmail(), plan.getNombre());
+		return suscripcion;
+	}
 
-        Plan planAnterior = suscripcion.getPlan();
-        Plan planNuevo = planRepository.findById(nuevoPlanId)
-                .orElseThrow(() -> new RuntimeException("Plan no encontrado"));
+	// Cambia el plan de una suscripción existente. Si es un upgrade, genera factura
+	// de prorrateo.
+	public Suscripcion cambiarPlan(Long suscripcionId, Long nuevoPlanId) {
+		Suscripcion suscripcion = suscripcionRepository.findById(suscripcionId)
+				.orElseThrow(() -> new RuntimeException("Suscripción no encontrada"));
 
-        if (planAnterior.getId().equals(planNuevo.getId())) {
-            throw new RuntimeException("Ya estás suscrito a este plan");
-        }
+		Plan planAnterior = suscripcion.getPlan();
+		Plan planNuevo = planRepository.findById(nuevoPlanId)
+				.orElseThrow(() -> new RuntimeException("Plan no encontrado"));
 
-        // Si es un upgrade (plan más caro), generar prorrateo
-        if (planNuevo.esUpgradeDe(planAnterior)) {
-            generarFacturaProrrateo(suscripcion, planAnterior, planNuevo);
-        }
+		if (planAnterior.getId().equals(planNuevo.getId())) {
+			throw new RuntimeException("Ya estás suscrito a este plan");
+		}
 
-        suscripcion.setPlan(planNuevo);
-        suscripcion = suscripcionRepository.save(suscripcion);
+		// Si es un upgrade (plan más caro), generar prorrateo
+		if (planNuevo.esUpgradeDe(planAnterior)) {
+			generarFacturaProrrateo(suscripcion, planAnterior, planNuevo);
+		}
 
-        log.info("Plan cambiado: {} -> {}", planAnterior.getNombre(), planNuevo.getNombre());
-        return suscripcion;
-    }
+		suscripcion.setPlan(planNuevo);
+		suscripcion = suscripcionRepository.save(suscripcion);
 
-    /**
-     * Genera una factura mensual para una suscripción.
-     */
-    public Factura generarFacturaMensual(Suscripcion suscripcion) {
-        Plan plan = suscripcion.getPlan();
-        Usuario usuario = suscripcion.getUsuario();
-        String pais = usuario.getPerfil() != null ? usuario.getPerfil().getPais() : "ES";
+		log.info("Plan cambiado: {} -> {}", planAnterior.getNombre(), planNuevo.getNombre());
+		return suscripcion;
+	}
 
-        BigDecimal porcentajeImpuesto = obtenerPorcentajeImpuestoPorPais(pais);
+	// Genera una factura mensual para una suscripción.
+	public Factura generarFacturaMensual(Suscripcion suscripcion) {
+		Plan plan = suscripcion.getPlan();
+		Usuario usuario = suscripcion.getUsuario();
+		String pais = usuario.getPerfil() != null ? usuario.getPerfil().getPais() : "ES";
 
-        Factura factura = Factura.builder()
-            .suscripcion(suscripcion)
-            .tipo(TipoFactura.MENSUAL)
-            .estado(EstadoFactura.PENDIENTE)
-            .subtotal(plan.getPrecioMensual())
-            .porcentajeImpuesto(porcentajeImpuesto)
-            .concepto("Suscripción " + plan.getNombre() + " - Mensual")
-            .periodoInicio(LocalDate.now())
-            .periodoFin(LocalDate.now().plusDays(30))
-            .fechaEmision(LocalDate.now())
-            .fechaVencimiento(LocalDate.now().plusDays(30))
-            .build();
+		BigDecimal porcentajeImpuesto = obtenerPorcentajeImpuestoPorPais(pais);
 
-        factura = facturaRepository.save(factura);
-        suscripcion.addFactura(factura);
+		Factura factura = Factura.builder().suscripcion(suscripcion).tipo(TipoFactura.MENSUAL)
+				.estado(EstadoFactura.PENDIENTE).subtotal(plan.getPrecioMensual())
+				.porcentajeImpuesto(porcentajeImpuesto).concepto("Suscripción " + plan.getNombre() + " - Mensual")
+				.periodoInicio(LocalDate.now()).periodoFin(LocalDate.now().plusDays(30)).fechaEmision(LocalDate.now())
+				.fechaVencimiento(LocalDate.now().plusDays(30)).build();
 
-        log.info("Factura mensual generada: {} - {}€", factura.getNumeroFactura(), factura.getTotal());
-        return factura;
-    }
+		factura.calcularTotales();
+		factura = facturaRepository.save(factura);
+		suscripcion.addFactura(factura);
 
-    private BigDecimal obtenerPorcentajeImpuestoPorPais(String pais) {
-        switch (pais != null ? pais.toUpperCase() : "ES") {
-            case "ES": // España
-                return new BigDecimal("21.00");
-            case "MX": // México
-                return new BigDecimal("16.00");
-            case "AR": // Argentina
-                return new BigDecimal("21.00");
-            case "US": // USA
-                return new BigDecimal("8.00");
-            case "CO": // Colombia
-                return new BigDecimal("19.00");
-            default:
-                return new BigDecimal("21.00"); // Default (España)
-        }
-    }
+		log.info("Factura mensual generada: {} - {}€", factura.getNumeroFactura(), factura.getTotal());
+		return factura;
+	}
 
-    /**
-     * Genera una factura de prorrateo al cambiar a un plan más caro.
-     */
-    public Factura generarFacturaProrrateo(Suscripcion suscripcion, Plan planAnterior, Plan planNuevo) {
-        // Calcular días restantes hasta el próximo cobro
-        long diasRestantes = suscripcion.getDiasHastaProximoCobro();
-        if (diasRestantes <= 0) {
-            diasRestantes = 30;
-        }
+	private BigDecimal obtenerPorcentajeImpuestoPorPais(String pais) {
+		switch (pais != null ? pais.toUpperCase() : "ES") {
+		case "ES": // España
+			return new BigDecimal("21.00");
+		case "MX": // México
+			return new BigDecimal("16.00");
+		case "AR": // Argentina
+			return new BigDecimal("21.00");
+		case "US": // USA
+			return new BigDecimal("8.00");
+		case "CO": // Colombia
+			return new BigDecimal("19.00");
+		default:
+			return new BigDecimal("21.00"); // Default (España)
+		}
+	}
 
-        // Calcular diferencia de precio diario
-        BigDecimal precioDiarioAnterior = planAnterior.getPrecioDiario();
-        BigDecimal precioDiarioNuevo = planNuevo.getPrecioDiario();
-        BigDecimal diferenciaDiaria = precioDiarioNuevo.subtract(precioDiarioAnterior);
+	// Genera una factura de prorrateo al cambiar a un plan más caro.
+	public Factura generarFacturaProrrateo(Suscripcion suscripcion, Plan planAnterior, Plan planNuevo) {
+		// Calcular días restantes hasta el próximo cobro
+		long diasRestantes = suscripcion.getDiasHastaProximoCobro();
+		if (diasRestantes <= 0) {
+			diasRestantes = 30;
+		}
 
-        // Calcular prorrateo
-        BigDecimal subtotalProrrateo = diferenciaDiaria
-                .multiply(BigDecimal.valueOf(diasRestantes))
-                .setScale(2, RoundingMode.HALF_UP);
+		// Calcular diferencia de precio diario
+		BigDecimal precioDiarioAnterior = planAnterior.getPrecioDiario();
+		BigDecimal precioDiarioNuevo = planNuevo.getPrecioDiario();
+		BigDecimal diferenciaDiaria = precioDiarioNuevo.subtract(precioDiarioAnterior);
 
-        Factura factura = Factura.builder()
-                .suscripcion(suscripcion)
-                .tipo(TipoFactura.PRORRATEO)
-                .estado(EstadoFactura.PENDIENTE)
-                .subtotal(subtotalProrrateo)
-                .concepto("Prorrateo cambio de plan: " + planAnterior.getNombre() + " → " + planNuevo.getNombre())
-                .diasProrrateados((int) diasRestantes)
-                .planAnterior(planAnterior.getNombre())
-                .planNuevo(planNuevo.getNombre())
-                .periodoInicio(LocalDate.now())
-                .periodoFin(suscripcion.getFechaProximoCobro())
-                .fechaEmision(LocalDate.now())
-                .fechaVencimiento(LocalDate.now().plusDays(7))
-                .build();
+		// Calcular prorrateo
+		BigDecimal subtotalProrrateo = diferenciaDiaria.multiply(BigDecimal.valueOf(diasRestantes)).setScale(2,
+				RoundingMode.HALF_UP);
 
-        factura = facturaRepository.save(factura);
-        suscripcion.addFactura(factura);
+		Factura factura = Factura.builder().suscripcion(suscripcion).tipo(TipoFactura.PRORRATEO)
+				.estado(EstadoFactura.PENDIENTE).subtotal(subtotalProrrateo)
+				.concepto("Prorrateo cambio de plan: " + planAnterior.getNombre() + " → " + planNuevo.getNombre())
+				.diasProrrateados((int) diasRestantes).planAnterior(planAnterior.getNombre())
+				.planNuevo(planNuevo.getNombre()).periodoInicio(LocalDate.now())
+				.periodoFin(suscripcion.getFechaProximoCobro()).fechaEmision(LocalDate.now())
+				.fechaVencimiento(LocalDate.now().plusDays(7)).build();
 
-        log.info("Factura prorrateo generada: {} - {}€ ({} días)", 
-                factura.getNumeroFactura(), factura.getTotal(), diasRestantes);
-        return factura;
-    }
+		factura = facturaRepository.save(factura);
+		suscripcion.addFactura(factura);
 
-    /**
-     * Procesa las suscripciones que deben ser cobradas hoy.
-     */
-    public void procesarCobrosAutomaticos() {
-        List<Suscripcion> suscripciones = suscripcionRepository.findSuscripcionesParaCobrarHoy();
-        
-        for (Suscripcion suscripcion : suscripciones) {
-            if (suscripcion.getAutoRenovacion()) {
-                generarFacturaMensual(suscripcion);
-                suscripcion.setFechaUltimoCobro(LocalDate.now());
-                suscripcion.setFechaProximoCobro(LocalDate.now().plusDays(suscripcion.getPeriodoFacturacionDias()));
-                suscripcionRepository.save(suscripcion);
-            }
-        }
-        
-        log.info("Cobros automáticos procesados: {} suscripciones", suscripciones.size());
-    }
+		log.info("Factura prorrateo generada: {} - {}€ ({} días)", factura.getNumeroFactura(), factura.getTotal(),
+				diasRestantes);
+		return factura;
+	}
 
-    /**
-     * Cancela una suscripción.
-     */
-    public Suscripcion cancelarSuscripcion(Long suscripcionId, String motivo) {
-        Suscripcion suscripcion = suscripcionRepository.findById(suscripcionId)
-                .orElseThrow(() -> new RuntimeException("Suscripción no encontrada"));
+	// Procesa las suscripciones que deben ser cobradas hoy.
+	public void procesarCobrosAutomaticos() {
+		List<Suscripcion> suscripciones = suscripcionRepository.findSuscripcionesParaCobrarHoy();
 
-        suscripcion.cancelar(motivo);
-        return suscripcionRepository.save(suscripcion);
-    }
+		for (Suscripcion suscripcion : suscripciones) {
+			if (suscripcion.getAutoRenovacion()) {
+				generarFacturaMensual(suscripcion);
+				suscripcion.setFechaUltimoCobro(LocalDate.now());
+				suscripcion.setFechaProximoCobro(LocalDate.now().plusDays(suscripcion.getPeriodoFacturacionDias()));
+				suscripcionRepository.save(suscripcion);
+			}
+		}
 
-    /**
-     * Obtiene la suscripción activa de un usuario.
-     */
-    @Transactional(readOnly = true)
-    public Optional<Suscripcion> obtenerSuscripcionActiva(Long usuarioId) {
-        return suscripcionRepository.findSuscripcionActivaByUsuarioId(usuarioId);
-    }
+		log.info("Cobros automáticos procesados: {} suscripciones", suscripciones.size());
+	}
 
-    /**
-     * Obtiene las facturas de un usuario.
-     */
-    @Transactional(readOnly = true)
-    public List<Factura> obtenerFacturasUsuario(Long usuarioId) {
-        return facturaRepository.findByUsuarioId(usuarioId);
-    }
+	// Cancela una suscripción.
+	public Suscripcion cancelarSuscripcion(Long suscripcionId, String motivo) {
+		Suscripcion suscripcion = suscripcionRepository.findById(suscripcionId)
+				.orElseThrow(() -> new RuntimeException("Suscripción no encontrada"));
 
-    /**
-     * Paga una factura.
-     */
-    public Factura pagarFactura(Long facturaId) {
-        Factura factura = facturaRepository.findById(facturaId)
-                .orElseThrow(() -> new RuntimeException("Factura no encontrada"));
+		suscripcion.cancelar(motivo);
+		return suscripcionRepository.save(suscripcion);
+	}
 
-        factura.marcarComoPagada();
-        return facturaRepository.save(factura);
-    }
+	// Obtiene la suscripción activa de un usuario.
+	@Transactional(readOnly = true)
+	public Optional<Suscripcion> obtenerSuscripcionActiva(Long usuarioId) {
+		return suscripcionRepository.findSuscripcionActivaByUsuarioId(usuarioId);
+	}
+
+	// Obtiene las facturas de un usuario.
+	@Transactional(readOnly = true)
+	public List<Factura> obtenerFacturasUsuario(Long usuarioId) {
+		return facturaRepository.findByUsuarioId(usuarioId);
+	}
+
+	// Busca una suscripción por ID.
+	@Transactional(readOnly = true)
+	public Optional<Suscripcion> buscarPorId(Long id) {
+		return suscripcionRepository.findById(id);
+	}
+
+	// Paga una factura.
+	public Factura pagarFactura(Long facturaId) {
+		Factura factura = facturaRepository.findById(facturaId)
+				.orElseThrow(() -> new RuntimeException("Factura no encontrada"));
+
+		factura.marcarComoPagada();
+		return facturaRepository.save(factura);
+	}
+
+	// Obtiene estadísticas globales del sistema.
+	@Transactional(readOnly = true)
+	public com.Martin.SaaS.dto.StatsDTO obtenerStatsGlobales() {
+		long totalUsuarios = usuarioRepository.count();
+		long suscripcionesActivas = suscripcionRepository.findByEstado(EstadoSuscripcion.ACTIVA).size();
+
+		BigDecimal ingresosTotales = facturaRepository.findByEstado(EstadoFactura.PAGADA).stream()
+				.map(Factura::getTotal).reduce(BigDecimal.ZERO, BigDecimal::add);
+
+		Map<String, Long> distribucionPlanes = new java.util.HashMap<>();
+		planRepository.findAll().forEach(plan -> {
+			long count = suscripcionRepository.countSuscripcionesActivasByPlanId(plan.getId());
+			distribucionPlanes.put(plan.getNombre(), count);
+		});
+
+		// Ingresos mensuales simplificados (últimos 6 meses)
+		List<com.Martin.SaaS.dto.StatsDTO.IngresoMensualDTO> ingresosMensuales = new java.util.ArrayList<>();
+		for (int i = 5; i >= 0; i--) {
+			LocalDate fecha = LocalDate.now().minusMonths(i);
+			String mesLabel = fecha.getMonth().name().substring(0, 3) + " " + fecha.getYear();
+
+			BigDecimal montoMes = facturaRepository.findByEstado(EstadoFactura.PAGADA).stream()
+					.filter(f -> f.getFechaEmision().getMonth() == fecha.getMonth()
+							&& f.getFechaEmision().getYear() == fecha.getYear())
+					.map(Factura::getTotal).reduce(BigDecimal.ZERO, BigDecimal::add);
+
+			ingresosMensuales.add(
+					com.Martin.SaaS.dto.StatsDTO.IngresoMensualDTO.builder().mes(mesLabel).monto(montoMes).build());
+		}
+
+		return com.Martin.SaaS.dto.StatsDTO.builder().totalUsuarios(totalUsuarios)
+				.suscripcionesActivas(suscripcionesActivas).ingresosTotales(ingresosTotales)
+				.distribucionPlanes(distribucionPlanes).ingresosMensuales(ingresosMensuales).build();
+	}
+
+	// Lista todas las suscripciones del sistema.
+	@Transactional(readOnly = true)
+	public List<Suscripcion> listarTodasSuscripciones() {
+		return suscripcionRepository.findAll();
+	}
 }

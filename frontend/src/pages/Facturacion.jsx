@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
 import api from '../services/api';
+import { formatCurrency } from '../utils/currencyUtils';
 
-const Facturacion = () => {
+const Facturacion = ({ currency }) => {
   const [facturas, setFacturas] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -36,9 +36,9 @@ const Facturacion = () => {
               <tr key={f.id}>
                 <td>{f.numeroFactura}</td>
                 <td>{f.fechaEmision}</td>
-                <td>{f.subtotal} €</td>
-                <td>{f.impuesto} €</td>
-                <td>{f.total} €</td>
+                <td>{formatCurrency(f.subtotal, currency)}</td>
+                <td>{formatCurrency(f.impuesto, currency)}</td>
+                <td>{formatCurrency(f.total, currency)}</td>
                 <td>{f.estado}</td>
               </tr>
             ))}

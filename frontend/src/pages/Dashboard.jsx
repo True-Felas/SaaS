@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { 
-  getUsuario, 
-  getPlanes, 
-  getFacturasUsuario, 
-  cambiarPlan, 
+import {
+  getUsuario,
+  getPlanes,
+  getFacturasUsuario,
+  cambiarPlan,
   pagarFactura,
-  cancelarSuscripcion 
+  cancelarSuscripcion
 } from '../services/api';
+import { formatCurrency } from '../utils/currencyUtils';
 
-function Dashboard({ usuarioActual, setUsuarioActual }) {
+function Dashboard({ usuarioActual, setUsuarioActual, currency }) {
   const [usuario, setUsuario] = useState(null);
   const [planes, setPlanes] = useState([]);
   const [facturas, setFacturas] = useState([]);
@@ -36,7 +37,7 @@ function Dashboard({ usuarioActual, setUsuarioActual }) {
       setUsuario(usuarioRes.data);
       setPlanes(planesRes.data);
       setFacturas(facturasRes.data);
-      
+
       // Actualizar usuario en localStorage
       localStorage.setItem('usuarioActual', JSON.stringify(usuarioRes.data));
       setUsuarioActual(usuarioRes.data);
@@ -49,9 +50,9 @@ function Dashboard({ usuarioActual, setUsuarioActual }) {
 
   const handleCambiarPlan = async (nuevoPlanId) => {
     if (!usuario?.suscripcionActiva) return;
-    
+
     try {
-      await cambiarPlan(usuario.suscripcionActiva.id, nuevoPlanId);
+      await cambiarPlan(usuario.suscripcionActiva.id, nuevoPlanId, usuarioActual.id);
       setMensaje({ tipo: 'success', texto: '¡Plan cambiado exitosamente! Se ha generado una factura de prorrateo.' });
       setShowCambiarPlan(false);
       cargarDatos();
@@ -75,7 +76,7 @@ function Dashboard({ usuarioActual, setUsuarioActual }) {
     if (!confirm('¿Estás seguro de cancelar tu suscripción?')) return;
 
     try {
-      await cancelarSuscripcion(usuario.suscripcionActiva.id, 'Cancelación por el usuario');
+      await cancelarSuscripcion(usuario.suscripcionActiva.id, 'Cancelación por el usuario', usuarioActual.id);
       setMensaje({ tipo: 'success', texto: 'Suscripción cancelada' });
       cargarDatos();
     } catch (error) {
@@ -122,8 +123,8 @@ function Dashboard({ usuarioActual, setUsuarioActual }) {
       {mensaje && (
         <div className={`alert alert-${mensaje.tipo}`}>
           {mensaje.texto}
-          <button 
-            onClick={() => setMensaje(null)} 
+          <button
+            onClick={() => setMensaje(null)}
             style={{ float: 'right', background: 'none', border: 'none', cursor: 'pointer' }}
           >
             ✕
@@ -131,7 +132,9 @@ function Dashboard({ usuarioActual, setUsuarioActual }) {
         </div>
       )}
 
-      {/* Tarjetas de estadísticas */}
+      {
+        // Tarjetas de estadísticas
+      }
       <div className="dashboard-grid">
         <div className="stat-card">
           <h3>Plan Actual</h3>
@@ -163,18 +166,20 @@ function Dashboard({ usuarioActual, setUsuarioActual }) {
         </div>
       </div>
 
-      {/* Acciones de suscripción */}
+      {
+        // Acciones de suscripción
+      }
       {suscripcion && suscripcion.estado === 'ACTIVA' && (
         <div className="card" style={{ marginBottom: '2rem' }}>
           <h3 style={{ marginBottom: '1rem' }}>Gestionar Suscripción</h3>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <button 
+            <button
               className="btn btn-primary"
               onClick={() => setShowCambiarPlan(true)}
             >
               Cambiar Plan
             </button>
-            <button 
+            <button
               className="btn btn-danger"
               onClick={handleCancelarSuscripcion}
             >
@@ -187,7 +192,7 @@ function Dashboard({ usuarioActual, setUsuarioActual }) {
       {!suscripcion && (
         <div className="card" style={{ marginBottom: '2rem', textAlign: 'center' }}>
           <h3 style={{ marginBottom: '1rem' }}>No tienes una suscripción activa</h3>
-          <button 
+          <button
             className="btn btn-primary"
             onClick={() => navigate('/planes')}
           >
@@ -196,7 +201,9 @@ function Dashboard({ usuarioActual, setUsuarioActual }) {
         </div>
       )}
 
-      {/* Tabla de facturas */}
+      {
+        // Tabla de facturas
+      }
       <div className="card">
         <h3 style={{ marginBottom: '1rem' }}>Mis Facturas</h3>
         {facturas.length === 0 ? (
@@ -225,7 +232,7 @@ function Dashboard({ usuarioActual, setUsuarioActual }) {
                       </span>
                     </td>
                     <td>{factura.concepto}</td>
-                    <td><strong>€{factura.total?.toFixed(2)}</strong></td>
+                    <td><strong>{formatCurrency(factura.total, currency)}</strong></td>
                     <td>
                       <span className={`badge ${getEstadoBadge(factura.estado)}`}>
                         {factura.estado}
@@ -234,7 +241,7 @@ function Dashboard({ usuarioActual, setUsuarioActual }) {
                     <td>{factura.fechaEmision}</td>
                     <td>
                       {factura.estado === 'PENDIENTE' && (
-                        <button 
+                        <button
                           className="btn btn-success"
                           style={{ padding: '0.5rem 1rem', fontSize: '0.875rem' }}
                           onClick={() => handlePagarFactura(factura.id)}
@@ -251,18 +258,20 @@ function Dashboard({ usuarioActual, setUsuarioActual }) {
         )}
       </div>
 
-      {/* Modal Cambiar Plan */}
+      {
+        // Modal Cambiar Plan
+      }
       {showCambiarPlan && (
         <div className="modal-overlay" onClick={() => setShowCambiarPlan(false)}>
           <div className="modal" onClick={e => e.stopPropagation()}>
             <h2>Cambiar Plan</h2>
             <p style={{ color: '#718096', marginBottom: '1.5rem' }}>
-              Si eliges un plan superior, se generará una factura de prorrateo 
+              Si eliges un plan superior, se generará una factura de prorrateo
               por la diferencia de los días restantes.
             </p>
-            
+
             {planes.filter(p => p.id !== suscripcion?.planId).map(plan => (
-              <div 
+              <div
                 key={plan.id}
                 style={{
                   padding: '1rem',
@@ -277,7 +286,7 @@ function Dashboard({ usuarioActual, setUsuarioActual }) {
                 <div>
                   <strong>{plan.nombre}</strong>
                   <div style={{ color: '#718096', fontSize: '0.875rem' }}>
-                    €{plan.precioMensual}/mes
+                    {formatCurrency(plan.precioMensual, currency)}/mes
                   </div>
                 </div>
                 <button
@@ -289,9 +298,9 @@ function Dashboard({ usuarioActual, setUsuarioActual }) {
                 </button>
               </div>
             ))}
-            
+
             <div className="modal-actions">
-              <button 
+              <button
                 className="btn btn-secondary"
                 onClick={() => setShowCambiarPlan(false)}
               >

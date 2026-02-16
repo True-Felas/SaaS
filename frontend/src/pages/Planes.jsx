@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getPlanes, crearSuscripcion } from '../services/api';
+import { formatCurrency } from '../utils/currencyUtils';
 
-function Planes({ usuarioActual, onLogin }) {
+function Planes({ usuarioActual, onLogin, currency }) {
   const [planes, setPlanes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [mensaje, setMensaje] = useState(null);
@@ -67,9 +68,11 @@ function Planes({ usuarioActual, onLogin }) {
 
   return (
     <>
-      {/* Hero Section for Planes */}
-      <div style={{ 
-        background: '#f8f9fa', 
+      {
+        // Hero Section for Planes
+      }
+      <div style={{
+        background: '#f8f9fa',
         padding: '3rem 2rem',
         borderBottom: '1px solid #e8eaed'
       }}>
@@ -94,18 +97,18 @@ function Planes({ usuarioActual, onLogin }) {
 
         <div className="plans-grid">
           {planes.map((plan, index) => (
-            <div 
-              key={plan.id} 
+            <div
+              key={plan.id}
               className={`plan-card ${index === 1 ? 'popular' : ''}`}
             >
               <span className="plan-type">{plan.tipo}</span>
               <h2 className="plan-name">{plan.nombre}</h2>
               <div className="plan-price">
-                €{plan.precioMensual}
+                {formatCurrency(plan.precioMensual, currency)}
                 <span>/mes</span>
               </div>
               <p className="plan-description">{plan.descripcion}</p>
-              
+
               <ul className="plan-features">
                 {getFeatures(plan).map((feature, i) => (
                   <li key={i} className={feature.activo ? '' : 'disabled'}>
@@ -114,13 +117,13 @@ function Planes({ usuarioActual, onLogin }) {
                 ))}
               </ul>
 
-              <button 
+              <button
                 className={`btn btn-full ${index === 1 ? 'btn-primary' : 'btn-secondary'}`}
                 onClick={() => handleSeleccionarPlan(plan.id)}
               >
-                {usuarioActual?.suscripcionActiva 
-                  ? 'Ya tienes suscripción' 
-                  : usuarioActual 
+                {usuarioActual?.suscripcionActiva
+                  ? 'Ya tienes suscripción'
+                  : usuarioActual
                     ? 'Seleccionar Plan'
                     : 'Comenzar prueba gratis'}
               </button>
@@ -133,7 +136,7 @@ function Planes({ usuarioActual, onLogin }) {
             💡 Prorrateo Inteligente
           </h3>
           <p style={{ color: '#5f6f7a', maxWidth: '700px', margin: '0 auto', lineHeight: 1.6 }}>
-            Al cambiar a un plan superior, solo pagarás la diferencia proporcional 
+            Al cambiar a un plan superior, solo pagarás la diferencia proporcional
             a los días restantes de tu ciclo de facturación. Sin costos ocultos, sin sorpresas.
           </p>
         </div>

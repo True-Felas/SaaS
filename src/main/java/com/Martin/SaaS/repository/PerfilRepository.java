@@ -6,19 +6,13 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-/**
- * Repositorio para la entidad Perfil.
- */
+// Repositorio para la entidad Perfil.
 @Repository
 public interface PerfilRepository extends JpaRepository<Perfil, Long> {
 
-    /**
-     * Busca un perfil por usuario ID.
-     */
-    Optional<Perfil> findByUsuarioId(Long usuarioId);
+	// Busca un perfil por usuario ID.
+	Optional<Perfil> findByUsuarioId(Long usuarioId);
 
-    /**
-     * Verifica si existe un perfil para el usuario.
-     */
-    boolean existsByUsuarioId(Long usuarioId);
+	// Verifica si existe un perfil para el usuario.
+	boolean existsByUsuarioId(Long usuarioId);
 }

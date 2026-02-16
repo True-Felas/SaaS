@@ -3,6 +3,9 @@ package com.Martin.SaaS.config;
 import com.Martin.SaaS.model.Plan;
 import com.Martin.SaaS.model.enums.TipoPlan;
 import com.Martin.SaaS.repository.PlanRepository;
+import com.Martin.SaaS.repository.UsuarioRepository;
+import com.Martin.SaaS.service.UsuarioService;
+import com.Martin.SaaS.model.Usuario;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
@@ -21,6 +24,8 @@ import java.math.BigDecimal;
 public class DataLoader implements CommandLineRunner {
 
     private final PlanRepository planRepository;
+    private final UsuarioService usuarioService;
+    private final UsuarioRepository usuarioRepository;
 
     @Override
     @Transactional
@@ -28,8 +33,23 @@ public class DataLoader implements CommandLineRunner {
         log.info("Inicializando datos de la aplicación SaaS...");
         
         inicializarPlanes();
+        inicializarAdmin();
         
         log.info("Datos inicializados correctamente.");
+    }
+
+    private void inicializarAdmin() {
+        String adminEmail = "admin@local";
+        if (usuarioRepository.existsByEmail(adminEmail)) {
+            log.info("Usuario admin ya existe: {}", adminEmail);
+            return;
+        }
+
+        // Crear usuario admin con contraseña por defecto (se recomienda cambiarla)
+        Usuario admin = usuarioService.registrarUsuario(adminEmail, "admin123", "Admin", "");
+        admin.setRole(com.Martin.SaaS.model.enums.Role.ADMIN);
+        usuarioRepository.save(admin);
+        log.info("Usuario admin creado: {} (password: admin123)", adminEmail);
     }
 
     private void inicializarPlanes() {

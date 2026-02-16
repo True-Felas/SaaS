@@ -18,11 +18,14 @@ body {
 /* Header */
 .header {
   background: #03363d;
-  padding: 1rem 2.5rem;
+  padding: 0.75rem 2.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 200px 1fr 250px; /* Logo, Navigation, Actions */
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
@@ -35,6 +38,7 @@ body {
 .nav-links {
   display: flex;
   gap: 2rem;
+  justify-content: center; /* Centrar enlaces dentro de la columna central */
 }
 
 .nav-links a {
@@ -239,6 +243,68 @@ body {
 
 .btn-danger:hover {
   background: #b92e3a;
+}
+
+.btn-outline-white {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+.btn-outline-white:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  justify-content: flex-end;
+}
+
+.currency-selector {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  min-width: 200px;
+  z-index: 1000;
+  padding: 0.5rem 0;
+  border: 1px solid #e2e8f0;
+}
+
+.dropdown-item {
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+  background: #f7fafc;
+}
+
+.dropdown-item.active {
+  background: #edf2f7;
+}
+
+.dropdown-item span:first-child {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #2d3748;
+}
+
+.dropdown-item span:last-child {
+  font-size: 0.75rem;
+  color: #718096;
 }
 
 .btn:disabled {

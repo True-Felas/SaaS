@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getUsuarios } from '../services/api';
+import { getPublicUsuarios } from '../services/api';
 
 function Usuarios() {
   const [usuarios, setUsuarios] = useState([]);
@@ -11,7 +11,7 @@ function Usuarios() {
 
   const cargarUsuarios = async () => {
     try {
-      const response = await getUsuarios();
+      const response = await getPublicUsuarios();
       setUsuarios(response.data);
     } catch (error) {
       console.error('Error cargando usuarios:', error);
@@ -44,8 +44,8 @@ function Usuarios() {
   return (
     <div className="container">
       <div className="page-title">
-        <h1>Usuarios Registrados</h1>
-        <p>Lista de todos los usuarios de la plataforma</p>
+        <h1>Nuestros Usuarios</h1>
+        <p>Comunidad BetterDrive: Usuarios que confían en nosotros</p>
       </div>
 
       <div className="card">
@@ -58,18 +58,15 @@ function Usuarios() {
             <table>
               <thead>
                 <tr>
-                  <th>ID</th>
                   <th>Nombre</th>
-                  <th>Email</th>
-                  <th>Plan</th>
-                  <th>Estado Suscripción</th>
-                  <th>Fecha Registro</th>
+                  <th>Plan Actual</th>
+                  <th>Estado</th>
+                  <th>Miembro desde</th>
                 </tr>
               </thead>
               <tbody>
                 {usuarios.map(usuario => (
                   <tr key={usuario.id}>
-                    <td>{usuario.id}</td>
                     <td>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                         <div className="user-avatar" style={{ width: '30px', height: '30px', fontSize: '0.75rem' }}>
@@ -78,27 +75,18 @@ function Usuarios() {
                         {usuario.nombre} {usuario.apellido}
                       </div>
                     </td>
-                    <td>{usuario.email}</td>
                     <td>
-                      {usuario.suscripcionActiva ? (
-                        <span className="badge badge-info">
-                          {usuario.suscripcionActiva.planNombre}
-                        </span>
-                      ) : (
-                        <span style={{ color: '#718096' }}>Sin plan</span>
-                      )}
+                      <span className="badge badge-info">
+                        {usuario.planNombre}
+                      </span>
                     </td>
                     <td>
-                      {usuario.suscripcionActiva ? (
-                        <span className={`badge ${getEstadoBadge(usuario.suscripcionActiva.estado)}`}>
-                          {usuario.suscripcionActiva.estado}
-                        </span>
-                      ) : (
-                        <span className="badge badge-warning">Sin suscripción</span>
-                      )}
+                      <span className={`badge ${getEstadoBadge(usuario.estadoSuscripcion)}`}>
+                        {usuario.estadoSuscripcion}
+                      </span>
                     </td>
                     <td>
-                      {usuario.fechaRegistro 
+                      {usuario.fechaRegistro
                         ? new Date(usuario.fechaRegistro).toLocaleDateString('es-ES')
                         : 'N/A'
                       }
@@ -117,15 +105,20 @@ function Usuarios() {
           <div className="value primary">{usuarios.length}</div>
         </div>
         <div className="stat-card">
-          <h3>Con Suscripción Activa</h3>
+          <h3>Comunidad Activa</h3>
           <div className="value">
-            {usuarios.filter(u => u.suscripcionActiva?.estado === 'ACTIVA').length}
+            {usuarios.filter(u => u.estadoSuscripcion === 'ACTIVA').length}
           </div>
         </div>
         <div className="stat-card">
-          <h3>Sin Suscripción</h3>
+          <h3>Nuevos miembros</h3>
           <div className="value">
-            {usuarios.filter(u => !u.suscripcionActiva).length}
+            {usuarios.filter(u => {
+              const joinDate = new Date(u.fechaRegistro);
+              const thirtyDaysAgo = new Date();
+              thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+              return joinDate > thirtyDaysAgo;
+            }).length}
           </div>
         </div>
       </div>

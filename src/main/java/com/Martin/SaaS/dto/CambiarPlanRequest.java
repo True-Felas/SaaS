@@ -4,13 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * DTO para cambiar de plan.
- */
+// DTO para cambiar de plan.
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class CambiarPlanRequest {
-    private Long suscripcionId;
-    private Long nuevoPlanId;
+	private Long suscripcionId;
+	private Long nuevoPlanId;
 }

@@ -8,29 +8,19 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * Repositorio para la entidad Plan.
- */
+// Repositorio para la entidad Plan.
 @Repository
 public interface PlanRepository extends JpaRepository<Plan, Long> {
 
-    /**
-     * Busca un plan por su tipo.
-     */
-    Optional<Plan> findByTipo(TipoPlan tipo);
+	// Busca un plan por su tipo.
+	Optional<Plan> findByTipo(TipoPlan tipo);
 
-    /**
-     * Busca todos los planes activos.
-     */
-    List<Plan> findByActivoTrue();
+	// Busca todos los planes activos.
+	List<Plan> findByActivoTrue();
 
-    /**
-     * Busca todos los planes activos ordenados por precio.
-     */
-    List<Plan> findByActivoTrueOrderByPrecioMensualAsc();
+	// Busca todos los planes activos ordenados por precio.
+	List<Plan> findByActivoTrueOrderByPrecioMensualAsc();
 
-    /**
-     * Verifica si existe un plan con el tipo dado.
-     */
-    boolean existsByTipo(TipoPlan tipo);
+	// Verifica si existe un plan con el tipo dado.
+	boolean existsByTipo(TipoPlan tipo);
 }

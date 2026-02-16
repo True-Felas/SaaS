@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { registrarUsuario, getPlanes } from '../services/api';
+import { formatCurrency } from '../utils/currencyUtils';
 
-function Registro({ onLogin }) {
+function Registro({ onLogin, currency }) {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -50,7 +51,7 @@ function Registro({ onLogin }) {
         ...formData,
         planId: formData.planId ? parseInt(formData.planId) : null
       };
-      
+
       const response = await registrarUsuario(dataToSend);
       onLogin(response.data);
       navigate('/dashboard');
@@ -65,7 +66,7 @@ function Registro({ onLogin }) {
     <div className="container">
       <div className="page-title">
         <h1>Crear Cuenta</h1>
-        <p>Únete a nuestra plataforma SaaS</p>
+        <p>Únete a BetterDrive</p>
       </div>
 
       <div className="card" style={{ maxWidth: '500px', margin: '2rem auto' }}>
@@ -139,19 +140,22 @@ function Registro({ onLogin }) {
               <option value="">-- Sin plan por ahora --</option>
               {planes.map(plan => (
                 <option key={plan.id} value={plan.id}>
-                  {plan.nombre} - €{plan.precioMensual}/mes
+                  {plan.nombre} - {formatCurrency(plan.precioMensual, currency)}/mes
                 </option>
               ))}
             </select>
           </div>
 
-          <button 
-            type="submit" 
+          <button
+            type="submit"
             className="btn btn-primary btn-full"
             disabled={loading}
           >
             {loading ? 'Registrando...' : 'Crear Cuenta'}
           </button>
+          <div style={{ marginTop: '1rem', textAlign: 'center' }}>
+            ¿Ya tienes cuenta? <Link to="/login">Inicia sesión</Link>
+          </div>
         </form>
       </div>
     </div>
