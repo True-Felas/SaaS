@@ -11,11 +11,22 @@ function Registro({ onLogin, currency }) {
     apellido: '',
     planId: ''
   });
+  const [fieldErrors, setFieldErrors] = useState({});
   const [planes, setPlanes] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
+
+  const validate = () => {
+    const errors = {};
+    if (!formData.nombre.trim()) errors.nombre = 'El nombre es obligatorio';
+    if (!formData.email) errors.email = 'El email es obligatorio';
+    else if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(formData.email)) errors.email = 'Introduce un email válido';
+    if (!formData.password) errors.password = 'La contraseña es obligatoria';
+    else if (formData.password.length < 6) errors.password = 'Mínimo 6 caracteres';
+    return errors;
+  };
 
   useEffect(() => {
     cargarPlanes();
@@ -39,10 +50,18 @@ function Registro({ onLogin, currency }) {
       ...formData,
       [e.target.name]: e.target.value
     });
+    if (fieldErrors[e.target.name]) {
+      setFieldErrors({ ...fieldErrors, [e.target.name]: null });
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const errors = validate();
+    if (Object.keys(errors).length > 0) {
+      setFieldErrors(errors);
+      return;
+    }
     setLoading(true);
     setError(null);
 
@@ -70,9 +89,9 @@ function Registro({ onLogin, currency }) {
       </div>
 
       <div className="card" style={{ maxWidth: '500px', margin: '2rem auto' }}>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} noValidate>
           {error && (
-            <div className="alert alert-error">
+            <div className="alert alert-error" role="alert">
               {error}
             </div>
           )}
@@ -85,9 +104,14 @@ function Registro({ onLogin, currency }) {
               name="nombre"
               value={formData.nombre}
               onChange={handleChange}
-              required
               placeholder="Tu nombre"
+              style={fieldErrors.nombre ? { borderColor: '#d93f4c' } : {}}
             />
+            {fieldErrors.nombre && (
+              <span style={{ color: '#d93f4c', fontSize: '0.8rem', marginTop: '0.25rem', display: 'block' }}>
+                ⚠ {fieldErrors.nombre}
+              </span>
+            )}
           </div>
 
           <div className="form-group">
@@ -101,6 +125,9 @@ function Registro({ onLogin, currency }) {
               placeholder="Tu apellido"
             />
           </div>
+              placeholder="Tu apellido"
+            />
+          </div>
 
           <div className="form-group">
             <label htmlFor="email">Email *</label>
@@ -110,9 +137,14 @@ function Registro({ onLogin, currency }) {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              required
               placeholder="tu@email.com"
+              style={fieldErrors.email ? { borderColor: '#d93f4c' } : {}}
             />
+            {fieldErrors.email && (
+              <span style={{ color: '#d93f4c', fontSize: '0.8rem', marginTop: '0.25rem', display: 'block' }}>
+                ⚠ {fieldErrors.email}
+              </span>
+            )}
           </div>
 
           <div className="form-group">
@@ -123,10 +155,15 @@ function Registro({ onLogin, currency }) {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              required
               minLength="6"
               placeholder="Mínimo 6 caracteres"
+              style={fieldErrors.password ? { borderColor: '#d93f4c' } : {}}
             />
+            {fieldErrors.password && (
+              <span style={{ color: '#d93f4c', fontSize: '0.8rem', marginTop: '0.25rem', display: 'block' }}>
+                ⚠ {fieldErrors.password}
+              </span>
+            )}
           </div>
 
           <div className="form-group">

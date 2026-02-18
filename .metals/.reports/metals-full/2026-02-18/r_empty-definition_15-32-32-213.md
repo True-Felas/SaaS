@@ -1,9 +1,20 @@
+error id: file:///C:/Users/juanx/Desktop/SpringBoot/SaaS/SaaS/src/main/java/com/Martin/SaaS/controller/AdminController.java:com/Martin/SaaS/service/SecurityService#
+file:///C:/Users/juanx/Desktop/SpringBoot/SaaS/SaaS/src/main/java/com/Martin/SaaS/controller/AdminController.java
+empty definition using pc, found symbol in pc: com/Martin/SaaS/service/SecurityService#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 201
+uri: file:///C:/Users/juanx/Desktop/SpringBoot/SaaS/SaaS/src/main/java/com/Martin/SaaS/controller/AdminController.java
+text:
+```scala
 package com.Martin.SaaS.controller;
 
 import com.Martin.SaaS.dto.UsuarioDTO;
 import com.Martin.SaaS.mapper.EntityMapper;
 import com.Martin.SaaS.service.AuditService;
-import com.Martin.SaaS.service.SecurityService;
+import com.Martin.SaaS.service.@@SecurityService;
 import com.Martin.SaaS.service.SuscripcionService;
 import com.Martin.SaaS.service.UsuarioService;
 import lombok.RequiredArgsConstructor;
@@ -77,3 +88,10 @@ public class AdminController {
 		}
 	}
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: com/Martin/SaaS/service/SecurityService#

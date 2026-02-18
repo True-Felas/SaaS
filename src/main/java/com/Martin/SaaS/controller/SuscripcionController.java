@@ -6,12 +6,13 @@ import com.Martin.SaaS.dto.SuscripcionDTO;
 import com.Martin.SaaS.mapper.EntityMapper;
 import com.Martin.SaaS.model.Factura;
 import com.Martin.SaaS.model.Suscripcion;
-import com.Martin.SaaS.model.Usuario;
+import com.Martin.SaaS.service.SecurityService;
 import com.Martin.SaaS.service.SuscripcionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Map;
@@ -25,7 +26,7 @@ public class SuscripcionController {
 
 	private final SuscripcionService suscripcionService;
 	private final EntityMapper mapper;
-	private final com.Martin.SaaS.service.UsuarioService usuarioService;
+	private final SecurityService securityService;
 
 	// Crea una nueva suscripción para un usuario.
 	@PostMapping
@@ -34,21 +35,11 @@ public class SuscripcionController {
 		try {
 			Long usuarioId = Long.valueOf(request.get("usuarioId").toString());
 			Long planId = Long.valueOf(request.get("planId").toString());
-
-			// Verificación de seguridad
-			if (requesterId == null)
-				return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-			Usuario requester = usuarioService.buscarPorId(requesterId)
-					.orElseThrow(() -> new RuntimeException("Usuario solicitante no encontrado"));
-
-			boolean allowed = requester.getRole() == com.Martin.SaaS.model.enums.Role.ADMIN
-					|| requester.getId().equals(usuarioId);
-			if (!allowed)
-				return ResponseEntity.status(HttpStatus.FORBIDDEN)
-						.body(Map.of("error", "No tienes permiso para crear esta suscripción."));
-
+			securityService.requireAdminOrOwner(requesterId, usuarioId);
 			Suscripcion suscripcion = suscripcionService.crearSuscripcion(usuarioId, planId);
 			return ResponseEntity.status(HttpStatus.CREATED).body(mapper.toSuscripcionDTO(suscripcion));
+		} catch (ResponseStatusException e) {
+			return ResponseEntity.status(e.getStatusCode()).body(Map.of("error", e.getReason()));
 		} catch (RuntimeException e) {
 			return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
 		}
@@ -59,25 +50,13 @@ public class SuscripcionController {
 	public ResponseEntity<?> cambiarPlan(@RequestBody CambiarPlanRequest request,
 			@RequestParam(required = false) Long requesterId) {
 		try {
-			// Verificación de seguridad
-			if (requesterId == null)
-				return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-			Usuario requester = usuarioService.buscarPorId(requesterId)
-					.orElseThrow(() -> new RuntimeException("Usuario solicitante no encontrado"));
-
-			// Obtener suscripción para verificar dueño
 			Suscripcion suscripcion = suscripcionService.buscarPorId(request.getSuscripcionId())
 					.orElseThrow(() -> new RuntimeException("Suscripción no encontrada"));
-
-			boolean allowed = requester.getRole() == com.Martin.SaaS.model.enums.Role.ADMIN
-					|| requester.getId().equals(suscripcion.getUsuario().getId());
-			if (!allowed)
-				return ResponseEntity.status(HttpStatus.FORBIDDEN)
-						.body(Map.of("error", "No tienes permiso para modificar esta suscripción."));
-
-			Suscripcion suscripcionActualizada = suscripcionService.cambiarPlan(request.getSuscripcionId(),
-					request.getNuevoPlanId());
-			return ResponseEntity.ok(mapper.toSuscripcionDTO(suscripcionActualizada));
+			securityService.requireAdminOrOwner(requesterId, suscripcion.getUsuario().getId());
+			Suscripcion actualizada = suscripcionService.cambiarPlan(request.getSuscripcionId(), request.getNuevoPlanId());
+			return ResponseEntity.ok(mapper.toSuscripcionDTO(actualizada));
+		} catch (ResponseStatusException e) {
+			return ResponseEntity.status(e.getStatusCode()).body(Map.of("error", e.getReason()));
 		} catch (RuntimeException e) {
 			return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
 		}
@@ -85,23 +64,17 @@ public class SuscripcionController {
 
 	// Obtiene la suscripción activa de un usuario.
 	@GetMapping("/usuario/{usuarioId}")
-	public ResponseEntity<SuscripcionDTO> obtenerSuscripcionActiva(@PathVariable Long usuarioId,
+	public ResponseEntity<?> obtenerSuscripcionActiva(@PathVariable Long usuarioId,
 			@RequestParam(required = false) Long requesterId) {
-		if (requesterId == null)
-			return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-
-		var maybeRequester = usuarioService.buscarPorId(requesterId);
-		if (maybeRequester.isEmpty())
-			return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
-
-		var requester = maybeRequester.get();
-		boolean allowed = requester.getRole() == com.Martin.SaaS.model.enums.Role.ADMIN
-				|| requester.getId().equals(usuarioId);
-		if (!allowed)
-			return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-
-		return suscripcionService.obtenerSuscripcionActiva(usuarioId).map(mapper::toSuscripcionDTO)
-				.map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
+		try {
+			securityService.requireAdminOrOwner(requesterId, usuarioId);
+			return suscripcionService.obtenerSuscripcionActiva(usuarioId)
+					.map(mapper::toSuscripcionDTO)
+					.map(ResponseEntity::ok)
+					.orElse(ResponseEntity.notFound().build());
+		} catch (ResponseStatusException e) {
+			return ResponseEntity.status(e.getStatusCode()).body(Map.of("error", e.getReason()));
+		}
 	}
 
 	// Cancela una suscripción.
@@ -110,24 +83,14 @@ public class SuscripcionController {
 			@RequestBody(required = false) Map<String, String> request,
 			@RequestParam(required = false) Long requesterId) {
 		try {
-			// Verificación de seguridad
-			if (requesterId == null)
-				return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-			Usuario requester = usuarioService.buscarPorId(requesterId)
-					.orElseThrow(() -> new RuntimeException("Usuario solicitante no encontrado"));
-
 			Suscripcion suscripcion = suscripcionService.buscarPorId(id)
 					.orElseThrow(() -> new RuntimeException("Suscripción no encontrada"));
-
-			boolean allowed = requester.getRole() == com.Martin.SaaS.model.enums.Role.ADMIN
-					|| requester.getId().equals(suscripcion.getUsuario().getId());
-			if (!allowed)
-				return ResponseEntity.status(HttpStatus.FORBIDDEN)
-						.body(Map.of("error", "No tienes permiso para cancelar esta suscripción."));
-
+			securityService.requireAdminOrOwner(requesterId, suscripcion.getUsuario().getId());
 			String motivo = request != null ? request.get("motivo") : "Cancelación por el usuario";
-			Suscripcion suscripcionCancelada = suscripcionService.cancelarSuscripcion(id, motivo);
-			return ResponseEntity.ok(mapper.toSuscripcionDTO(suscripcionCancelada));
+			Suscripcion cancelada = suscripcionService.cancelarSuscripcion(id, motivo);
+			return ResponseEntity.ok(mapper.toSuscripcionDTO(cancelada));
+		} catch (ResponseStatusException e) {
+			return ResponseEntity.status(e.getStatusCode()).body(Map.of("error", e.getReason()));
 		} catch (RuntimeException e) {
 			return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
 		}
@@ -135,24 +98,16 @@ public class SuscripcionController {
 
 	// Obtiene las facturas de un usuario.
 	@GetMapping("/usuario/{usuarioId}/facturas")
-	public ResponseEntity<List<FacturaDTO>> obtenerFacturas(@PathVariable Long usuarioId,
+	public ResponseEntity<?> obtenerFacturas(@PathVariable Long usuarioId,
 			@RequestParam(required = false) Long requesterId) {
-		if (requesterId == null)
-			return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-
-		var maybeRequester = usuarioService.buscarPorId(requesterId);
-		if (maybeRequester.isEmpty())
-			return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
-
-		var requester = maybeRequester.get();
-		boolean allowed = requester.getRole() == com.Martin.SaaS.model.enums.Role.ADMIN
-				|| requester.getId().equals(usuarioId);
-		if (!allowed)
-			return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-
-		List<FacturaDTO> facturas = suscripcionService.obtenerFacturasUsuario(usuarioId).stream()
-				.map(mapper::toFacturaDTO).toList();
-		return ResponseEntity.ok(facturas);
+		try {
+			securityService.requireAdminOrOwner(requesterId, usuarioId);
+			List<FacturaDTO> facturas = suscripcionService.obtenerFacturasUsuario(usuarioId).stream()
+					.map(mapper::toFacturaDTO).toList();
+			return ResponseEntity.ok(facturas);
+		} catch (ResponseStatusException e) {
+			return ResponseEntity.status(e.getStatusCode()).body(Map.of("error", e.getReason()));
+		}
 	}
 
 	// Paga una factura.

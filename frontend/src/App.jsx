@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Usuarios from './pages/Usuarios';
 import AdminDashboard from './pages/AdminDashboard';
+import Auditoria from './pages/Auditoria';
 
 function App() {
   const [usuarioActual, setUsuarioActual] = useState(null);
@@ -83,9 +84,14 @@ function App() {
                 Mi Panel
               </NavLink>
               {usuarioActual.role === 'ADMIN' && (
-                <NavLink to="/admin" className={({ isActive }) => isActive ? 'active' : ''}>
-                  Admin
-                </NavLink>
+                <>
+                  <NavLink to="/admin" className={({ isActive }) => isActive ? 'active' : ''}>
+                    Admin
+                  </NavLink>
+                  <NavLink to="/auditoria" className={({ isActive }) => isActive ? 'active' : ''}>
+                    Auditoría
+                  </NavLink>
+                </>
               )}
             </>
           )}
@@ -149,6 +155,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard usuarioActual={usuarioActual} setUsuarioActual={setUsuarioActual} currency={currency} />} />
           <Route path="/usuarios" element={<Usuarios currency={currency} />} />
           <Route path="/admin" element={<AdminDashboard usuarioActual={usuarioActual} currency={currency} />} />
+          <Route path="/auditoria" element={<Auditoria usuarioActual={usuarioActual} />} />
         </Routes>
       </main>
     </div>
